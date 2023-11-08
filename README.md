@@ -3,7 +3,7 @@
 
 **NOTE**: This code should be used for academic purposes only. This code should not be shared or used for commercial purposes without the consent of all the authors involved.
 
-**Description**: Python implementation of the programs used for development of the models hosted in RNA-Small molecule binding Affinity Predictor (RSAPred) web server
+**Description**: Python implementation of the programs used for development of the models hosted in RNA-Small molecule binding Affinity Predictor (<a href="https://web.iitm.ac.in/bioinfo2/RSAPred/" target="_blank">RSAPred</a>) web server
 
 # Usage restrictions
 The code has been provided for academic purposes only.
