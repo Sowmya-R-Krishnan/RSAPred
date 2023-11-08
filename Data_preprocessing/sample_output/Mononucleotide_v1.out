@@ -1,0 +1,11 @@
+Target_RNA_ID	Target_RNA_name	A	G	C	U
+Target_159	Pri-miR-96 RNAC  (UU loop mutant to AU basepair)	0.325	0.35	0.1	0.225
+Target_160	Pri-miR-96 RNA1 (Drosha processing site only)	0.3	0.35	0.1	0.25
+Target_161	Pri-miR-96 RNA2 (desired GG loop only)	0.275	0.425	0.125	0.175
+Target_162	Pri-miR-96 RNA3 (both the Drosha target site and adjacent target site)	0.28261	0.36957	0.1087	0.23913
+Target_163	Pri-miR-96 RNA4 (GG to GC loop mutation)	0.28261	0.34783	0.13043	0.23913
+Target_164	Pri-miR-96 RNA5 (UU loop mutant to UA loop)	0.30435	0.36957	0.1087	0.21739
+Target_165	Pri-miR-96 AT-rich DNA hairpin	0.14286	0.28571	0.28571	0.28571
+Target_202	5'UUU/3'AUA, miR-96 Precursor Processing Site	0.20513	0.24359	0.23077	0.32051
+Target_203	5'CGAUUU/3'GGUAUA, Expanded miR-96 Precursor Processing Site	0.20513	0.24359	0.23077	0.32051
+Target_227	Pre-miR-210	0.16667	0.26667	0.43333	0.13333
