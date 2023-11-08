@@ -5,6 +5,8 @@
 
 **Description**: Python implementation of the programs used for development of the models hosted in RNA-Small molecule binding Affinity Predictor (<a href="https://web.iitm.ac.in/bioinfo2/RSAPred/" target="_blank">RSAPred</a>) web server
 
+<img align=center src="https://web.iitm.ac.in/bioinfo2/RSAPred/images/logo/RSAPred_logo_v2.svg">
+
 # Usage restrictions
 The code has been provided for academic purposes only.
 
