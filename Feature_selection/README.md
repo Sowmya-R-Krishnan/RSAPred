@@ -1,0 +1,41 @@
+# Feature selection stages - Parallelized to use multi-core CPUs using the multiprocessing python package
+
+## Description
+* Three feature selection methods are provided - Forward feature selection (custom implementation), Backward feature elimination (from scikit-learn), Genetic algorithm (from sklearn-genetic)
+* The first four sample commands must be iteratively run for performing successive feature combinations (preferably using a shell script) till the desired accuracy is reached (in forward feature selection)
+* Cross-validation (stratified 10-fold) and jack-knife test are performed only on the best models from each iteration to save time taken to evaluate feature combinations
+
+## Prerequisites
+* Anaconda or Miniconda with Python 3.8.
+* A conda environment with the following libraries:
+	* Python (>v3.8)
+	* pandas
+	* numpy
+	* scipy
+	* scikit-learn
+	* sklearn-genetic
+	* pickle
+	* matplotlib
+	* seaborn
+	* multiprocessing
+	* tqdm
+	* Generic libraries: sys, re, csv, os, collections...
+
+## Sample commands (Follow the same order to reproduce the files provided in sample_output folder)
+```
+* python -u ffs_final.py "./data/Final_sample_dataset_v1.csv" "./data/Pairwise_featcorr_0.8.pkl" 3 <nfeat> "all" <output path>
+* python -u process_regression_output_v1.py <output from previous program> "pass_models.log" "best_models.log"
+* python -u get_desc_stats_v1.py "best_models.log" <nfeat> "feat_stats.out" "feat_pass.out"
+* python -u process_regression_output_v2.py "best_prev_models.log" "best_current_models.log" <prev_nfeat> "prev_vs_current_best_models.log"
+* python -u rfecv_feat_selection_final.py "./data/Final_sample_dataset_v1.csv" 3 "RFECV_model_output.pkl"
+* python -u genetic_selection_final.py "./data/Final_sample_dataset_v1.csv" 3 "GA_model_output.pkl"
+* python -u perform_10_fold_CV.py "./data/Final_sample_dataset_v1.csv" "best_models.log" 3 <output path>
+* python -u perform_LOO_CV.py "./data/Final_sample_dataset_v1.csv" "best_models.log" <nfeat> 3 <output path>
+```
+
+## Miscellaneous
+* In `find_feature_combinations_v5.py`, the keyword "all" needs to be replaced with the output file (feat_pass.out) from `get_desc_stats_v1.py` for using the features with best performance from the previous feature combination iteration.
+* The complete dataset can be downloaded for each RNA subtype from the <a href="https://web.iitm.ac.in/bioinfo2/R_SIM/" target="_blank">R-SIM database</a>
+* All programs take inputs as command-line arguments only
+* The same pipeline is followed to prepare all custom test datasets used in the study, in the format necessary for model evaluation
+* The header fields or columns provided in the sample dataset must be present (column order can be random) in your custom dataset file for the programs to work in the intended fashion
