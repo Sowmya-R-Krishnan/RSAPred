@@ -9,3 +9,4 @@ mordred
 openbabel
 tqdm
 multiprocessing
+viennarna
