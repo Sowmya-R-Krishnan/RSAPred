@@ -22,7 +22,8 @@
 	* matplotlib
 	* seaborn
 	* mordred
-	* OpenBabel
+	* openbabel
+        * viennarna
 	* Generic libraries: sys, re, csv, os, collections...
 
 ## Sample commands (Follow the same order to reproduce the files provided in sample_output folder)
