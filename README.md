@@ -14,4 +14,4 @@ The code has been provided for academic purposes only.
 The sample datasets used for training and evaluating the models are provided in the `data` folder. In order to use your own data or the complete dataset, you have to prepare the datasets in the format provided for each case to train/test the models. To get the complete datasets used in the study, please visit the <a href="https://web.iitm.ac.in/bioinfo2/R_SIM/" target="_blank">R-SIM database</a>.
 
 # Code usage
-Instructions on code usage is available in a README.md file within each folder. For further queries related to code usage, please write to us (sowmya.rk1@tcs.com; roy.arijit3@tcs.com; gromiha@iitm.ac.in).
+Instructions on code usage are available in a README.md file within each folder. For further queries related to code usage, please write to us (sowmya.rk1@tcs.com; roy.arijit3@tcs.com; gromiha@iitm.ac.in).
