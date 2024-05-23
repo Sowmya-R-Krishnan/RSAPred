@@ -20,3 +20,6 @@ Instructions on code usage are available in a README.md file within each folder 
 * <a href="https://github.com/Sowmya-R-Krishnan/RSAPred/blob/main/Model_evaluation/README.md">Model evaluation</a>
 
 For further queries related to code usage, please write to us (sowmya.rk1@tcs.com; roy.arijit3@tcs.com; gromiha@iitm.ac.in).
+
+# Citation
+Please cite this article if you use the codes in this repository for your research: https://doi.org/10.1093/bib/bbae002
