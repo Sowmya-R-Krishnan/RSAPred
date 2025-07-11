@@ -65,9 +65,9 @@ for val in pos_pred:
 
 for val in neg_pred:
 	if(val<4.0):
-		neg_pred_classes.append(1)  #Correct prediction of inactives - True negative
+		neg_pred_classes.append(0)  #Correct prediction of inactives - True negative
 	else:
-		neg_pred_classes.append(0)  #Incorrect prediction of inactives - False positive
+		neg_pred_classes.append(1)  #Incorrect prediction of inactives - False positive
 
 pred_all = []
 true_all = []
